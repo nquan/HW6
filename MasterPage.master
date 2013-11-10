@@ -1,0 +1,29 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Masterpage</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+        <link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+<body>
+    <form id="form1" runat="server">
+  <div id="container">
+          <div id="header">
+            <h2> Welcome to Vincent Van Gogh Study Gallery</h2>
+            </div>
+        <div id ="main">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <div id="footer">
+            Let's Go Explore!
+            </div>
+        </div>
+    </form>
+</body>
+</html>
